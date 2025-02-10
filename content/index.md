@@ -1,6 +1,11 @@
 ---
-title: Welcome to Quartz
+title: Wiki Informatica Sapienza primo anno (canale MZ)
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+> email docenti: cognome@di.uniroma1.it
+
+# corsi del primo semestre
+- [[calcolo differenziale]]
+- [[progettazione di sistemi digitali]]
+- [[metodi matematici per l'informatica]]
+- (niente appunti per fondamenti di programmazione)

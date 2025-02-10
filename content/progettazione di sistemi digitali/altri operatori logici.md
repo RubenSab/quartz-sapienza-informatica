@@ -1,0 +1,2 @@
+- [[XOR]]
+- [[NAND e NOR]]
