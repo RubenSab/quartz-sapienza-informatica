@@ -43,7 +43,7 @@ const defaultOptions: GraphOptions = {
     enableRadial: false,
   },
   globalGraph: {
-    drag: true,
+    drag: false,
     zoom: true,
     depth: -1,
     scale: 0.9,
