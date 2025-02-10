@@ -1,0 +1,1 @@
+> Il flip-flop SR è composto da un [[latch set-reset (SR)]] abilitato da un clock.

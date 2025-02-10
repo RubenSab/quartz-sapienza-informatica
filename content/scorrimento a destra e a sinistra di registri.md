@@ -1,0 +1,2 @@
+
+![[registro RL shift.jpg]]
