@@ -9,7 +9,7 @@ Data una [[rete sequenziale generica.canvas|rete sequenziale generica]] si appli
 
 
 - diagramma della rete [[automi a stati finiti (finite state automata) con output]]
-- [[diagramma della "macchina" con astrazione dai valori binari]]
+- diagramma della "macchina" con astrazione dai valori binari
 
 Grazie all'analisi compiuta, si può verificare se l'[[automi a stati finiti (finite state automata) con output]] è stato realizzato con il minore numero di flip flop.
 

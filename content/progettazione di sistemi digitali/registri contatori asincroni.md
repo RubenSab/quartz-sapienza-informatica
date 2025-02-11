@@ -1,3 +1,0 @@
-- [[contatore preselezionabile]]
-- [[contatore con reset]]
-- [[contatore a cascata]]

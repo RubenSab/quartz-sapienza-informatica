@@ -1,1 +1,1 @@
->Per progettare un registro contatore di eventi, basta collegare la linea di output dell'evento desiderato come input al primo [[flip-flop]] di un [[registri contatori|registro contatore]] al posto della costante 1 che c'è normalmente.
+>Per progettare un registro contatore di eventi, basta collegare la linea di output dell'evento desiderato come input al primo [[flip-flop]] di un [[registro contatore]] al posto della costante 1 che c'è normalmente, perché 1 incrementa il conteggio, mentre 0 non lo incrementa; non serve mandarla a tutti i flip-flop, basta mandarlo al primo.
