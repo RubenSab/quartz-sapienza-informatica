@@ -7,8 +7,8 @@
 
 - **Ingressi asincroni** (indipendenti dal clock): Sono usati per forzare il flip-flop in uno stato specifico, senza aspettare il ciclo di clock. I due ingressi asincroni più comuni sono:
     
-    - **Clear (o Reset)**: Resetta (pone a 0) l'uscita del flip-flop in modo immediato, senza bisogno del clock.
     - **Preset (o Set)**: Imposta (pone a 1) l'uscita del flip-flop in modo immediato, senza bisogno del clock.
+    - **Clear (o Reset)**: Resetta (pone a 0) l'uscita del flip-flop in modo immediato, senza bisogno del clock.
 
 ![[Pasted image 20250210173934 1.png]]
 
