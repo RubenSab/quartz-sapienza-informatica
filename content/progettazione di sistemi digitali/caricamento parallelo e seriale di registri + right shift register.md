@@ -15,7 +15,7 @@ Aggiungendo una linea di LOAD e una serie di circuiti di controllo abbinati ai f
 
 ![[registro D.svg]]
 è utile anche inserire una linea asincrona CLEAR/RESET che resetta tutti i flip-flop quando attivata.
-## Con i [[flip-flop set-reset (SR)]] e [[flip flop JK.svg]]
+## Con i [[flip-flop set-reset (SR)]] e [[flip-flop (JK)]]
 
 Se non si considera la linea di LOAD, la procedura è identica alla precedente in entrambi i casi perché negando il segnale che entra in S (o J) e facendolo entrare in R (o K) otteniamo un FF D.  
 
