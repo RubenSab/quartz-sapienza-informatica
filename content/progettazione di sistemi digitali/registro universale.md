@@ -1,9 +1,9 @@
-+> Supporta ogni operazione possibile dei registri:
+> Supporta ogni operazione possibile dei registri:
 
-- [[caricamento parallelo e seriale di registri|caricamento parallelo]],
-- [[scorrimento a destra e a sinistra di registri|scorrimento a DX e a SX]],
+- [[caricamento parallelo e seriale di registri + right shift register|caricamento parallelo]],
+- [[scorrimento sia a destra che a sinistra di registri (SISO)|scorrimento a DX e a SX]],
 - [[registri di memorizzazione|memorizzazione]],
-- [[rotazione a destra e a sinistra di registri|rotazione a DX e a SX]]
+- [[rotazione a destra e a sinistra di registri|rotazione a DX e a SX]] (e anche il right/left shift normale)
 
 ```
        __________________
@@ -34,12 +34,12 @@ Innanzitutto serve un registro che supporti sia lo **scorrimento** che la **rota
 
 Combinando tutto ciò insieme, più il caricamento parallelo e la memorizzazione, otteniamo il registro universale, le cui quattro modalità sono le **linee di selezione** dei MUX di ogni flip-flop.
 
-| modalità del registro/ linea di selezione | ingresso selezionato            |
-| ----------------------------------------- | ------------------------------- |
-| caricamento parallelo                     | input parallelo del FF corrente |
-| left shift                                | uscita del FF destro            |
-| right shift                               | uscita del FF sinistro          |
-| memorizzazione                            | stato del FF corrente           |
+| modalità del registro/ linea di selezione del MUX | ingresso del FF selezionato     |
+| ------------------------------------------------- | ------------------------------- |
+| caricamento parallelo                             | input parallelo del FF corrente |
+| left shift                                        | uscita del FF destro            |
+| right shift                                       | uscita del FF sinistro          |
+| memorizzazione                                    | stato del FF corrente           |
 
 ![[registro universale.jpg]]
 
