@@ -1,0 +1,72 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "tag:todo",
+      "color": {
+        "a": 1,
+        "rgb": 10158575
+      }
+    },
+    {
+      "query": "tag:toadd",
+      "color": {
+        "a": 1,
+        "rgb": 14701269
+      }
+    },
+    {
+      "query": "path: \"progettazione di sistemi digitali\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 14245495
+      }
+    },
+    {
+      "query": "path: \"metodi matematici per l'informatica\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 6315737
+      }
+    },
+    {
+      "query": "path:\"fondamenti di programmazione\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 9427294
+      }
+    },
+    {
+      "query": "path: \"calcolo differenziale\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 6080726
+      }
+    },
+    {
+      "query": "path:interdisciplinare  ",
+      "color": {
+        "a": 1,
+        "rgb": 16777215
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": true,
+  "textFadeMultiplier": -1.8,
+  "nodeSizeMultiplier": 2.12344871794872,
+  "lineSizeMultiplier": 1.92170395933059,
+  "collapse-forces": false,
+  "centerStrength": 0.419458978069687,
+  "repelStrength": 13.1947643390821,
+  "linkStrength": 0.682620759238239,
+  "linkDistance": 178,
+  "scale": 0.02917858598640547,
+  "close": true
+}

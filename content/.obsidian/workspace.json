@@ -1,0 +1,271 @@
+{
+  "main": {
+    "id": "5a9b45b98df6cb56",
+    "type": "split",
+    "children": [
+      {
+        "id": "ef4387c58f639384",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "86543358a17e67bd",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6428813b4471d9bc",
+    "type": "split",
+    "children": [
+      {
+        "id": "02fcd87bf8d23f0e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6b36e9a938a7c537",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "b81d9572839438c6",
+            "type": "leaf",
+            "state": {
+              "type": "surfing-tab-tree",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "e4e232db8a5f12b5",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "8a0ca084c03dbab4",
+            "type": "leaf",
+            "state": {
+              "type": "surfing-tab-tree",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "f8f30c9a426e0e5f",
+            "type": "leaf",
+            "state": {
+              "type": "surfing-tab-tree",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "bf6ffb2552926f94",
+            "type": "leaf",
+            "state": {
+              "type": "surfing-tab-tree",
+              "state": {},
+              "icon": "chrome",
+              "title": "Surfing Tab Tree"
+            }
+          }
+        ]
+      },
+      {
+        "id": "adb2dbe053b7b3b6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1e8284bbece5404c",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "graph",
+              "state": {},
+              "pinned": true,
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 280.5094871520996
+  },
+  "right": {
+    "id": "26b38658cac3fe47",
+    "type": "split",
+    "children": [
+      {
+        "id": "ec587cf2e56643fa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3f883af87b9a38b6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "3a232b0a94f1db1a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "news/2024-10-17.md",
+                "linksCollapsed": true,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 2024-10-17"
+            }
+          },
+          {
+            "id": "e6aadb8e9466a011",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "55c0f2f41102c182",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "news/2024-10-17.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 2024-10-17"
+            }
+          },
+          {
+            "id": "c608bbb87b84c2b0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "news/2024-10-17.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "virgola mobile",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 2024-10-17"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 342.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "graph:Open graph view": false,
+      "switcher:Open quick switcher": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "homepage:Open homepage": false
+    }
+  },
+  "active": "86543358a17e67bd",
+  "lastOpenFiles": [
+    "progettazione di sistemi digitali/registro contatore.md",
+    "progettazione di sistemi digitali/automi a stati finiti (finite state automata) con output.md",
+    "progettazione di sistemi digitali/addizionatore sequenziale.md",
+    "calcolo differenziale/notazione o grande.md",
+    "progettazione di sistemi digitali/sintesi dell'addizionatore sequenziale.md",
+    "progettazione di sistemi digitali/automa sommatore.png",
+    "progettazione di sistemi digitali/flip-flop.md",
+    "progettazione di sistemi digitali/latch set-reset (SR).md",
+    "progettazione di sistemi digitali/flip-flop set-reset (SR).md",
+    "progettazione di sistemi digitali/flip-flop delay (D).md",
+    "progettazione di sistemi digitali/flip-flop toggle (T).md",
+    "progettazione di sistemi digitali/addizionatori (adder).md",
+    "progettazione di sistemi digitali/tabelle inverse dei flip flop.md",
+    "progettazione di sistemi digitali/flip-flop (JK).md",
+    "progettazione di sistemi digitali/esempio Mealy.png",
+    "progettazione di sistemi digitali/ripple carry adder per valori in CA2.md",
+    "Pasted image 20250212190133.png",
+    "progettazione di sistemi digitali/esempio Moore.png",
+    "progettazione di sistemi digitali/analisi di reti sequenziali.md",
+    "progettazione di sistemi digitali/criterio di minimalità.md",
+    "progettazione di sistemi digitali/contatore sincrono modulo 2 alla n.md",
+    "progettazione di sistemi digitali/memoria.md",
+    "progettazione di sistemi digitali/sintesi di reti sequenziali.md",
+    "progettazione di sistemi digitali/minimizzazione dell'automa a stati finiti.md",
+    "progettazione di sistemi digitali/contatore asincrono a cascata.jpg",
+    "progettazione di sistemi digitali/contatore sincrono bidirezionale.md",
+    "progettazione di sistemi digitali/contatore con abilitazione al conteggio.md",
+    "progettazione di sistemi digitali/contatore sincrono con reset.md",
+    "progettazione di sistemi digitali/contatore sincrono preselezionabile.md",
+    "progettazione di sistemi digitali/contatore di eventi.md",
+    "progettazione di sistemi digitali/registri di memorizzazione.md",
+    "progettazione di sistemi digitali/registro contatore mod 8.jpg",
+    "progettazione di sistemi digitali/Pasted image 20250212114555.png",
+    "progettazione di sistemi digitali/Pasted image 20250211210239.png",
+    "progettazione di sistemi digitali/Pasted image 20250211204436.png",
+    "progettazione di sistemi digitali/Pasted image 20250211204411.png",
+    "altro",
+    "piani di studi",
+    "progettazione di sistemi digitali/Logigator_ Editor.html",
+    "progettazione di sistemi digitali/Logigator_ Editor_files/polyfills-LZBJRJJE.js",
+    "progettazione di sistemi digitali/Logigator_ Editor_files/styles-OSOO62JX.css",
+    "progettazione di sistemi digitali/Logigator_ Editor_files/vcd15cbe7772f49c399c6a5babf22c1241717689176015.js",
+    "progettazione di sistemi digitali/Logigator_ Editor_files/main-ZANDHLQ2.js",
+    "progettazione di sistemi digitali/Logigator_ Editor_files/js",
+    "progettazione di sistemi digitali/Logigator_ Editor_files",
+    "progettazione di sistemi digitali/rete sequenziale generica.canvas",
+    "search.py"
+  ]
+}
