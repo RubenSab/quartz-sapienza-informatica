@@ -12,3 +12,5 @@ Un'espressione SOP (o POS) è minimale se tra tutte le espressioni booleane poss
 
 # per gli [[automi a stati finiti (finite state automata) con output]]
 Un'automa è minimale se è realizzato con il minor numero di [[flip-flop]] possibili, cioé non ha stati equivalenti.
+
+> Due stati si dicono equivalenti se per ogni possibile valore di ingresso transitano nello stesso stato successivo e producono la stessa uscita.

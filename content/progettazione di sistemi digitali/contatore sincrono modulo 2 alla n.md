@@ -19,9 +19,13 @@ Disegniamo lo schema dell'automa con il [[automi a stati finiti (finite state au
 
 Ricaviamo le espressioni minimali delle [[rete sequenziale generica.canvas|funzioni di eccitazione]] dei [[flip-flop (JK)]].
 $j_{0}=k_{0}=1$
+
 $j_{1}=k_{1}=y_{0}$
+
 $j_{2}=k_{2}=y_{0}\cdot y_{1}$
+
 ...
+
 $j_{n}=k_{n}=y_{n-1}\cdot y_{n}$
 
 Osserviamo che nei contatori sincroni, ogni flip flop dal terzo incluso in poi commuta solo quando le uscite dei due flip-flip antecedenti sono a 1.

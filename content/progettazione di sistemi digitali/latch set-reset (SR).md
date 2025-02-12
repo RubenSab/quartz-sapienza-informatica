@@ -10,7 +10,9 @@
 | 0   | 1   | 0: reset (uno dei due stati di funzionamento normale)                                                                                                                                                                                                                         |
 | 1   | 0   | 1: set (uno dei due stati di funzionamento normale)                                                                                                                                                                                                                           |
 | 1   | 1   | C̶̦̙̤͓̝̾̂̇̅̈́̓͋̕O̶̘̱̰̖̔̔͆̑̎̀̿̕ͅN̴͕̹̖̘͓̿͑F̸͎̺̎Ȋ̴̖͔͕̎̍͝ͅG̴̡̟̜̗͇̖̐̈͋̉́͐̈́̕͠U̵̥͕̟͊͗̒͑̎̕͝͝Ṛ̸̩͌̂͆̏̾̚Á̷̦͕̰̼̥̽ͅͅZ̶͕̽͐̄͂͜Í̴̜̀Ö̶̧̨͔̭͇͎́͝Ņ̸͎̝̙̜̚E̶̝̙̣͕̮͚̮͂ ̷̡̛̘͓͇̦̫̻̈́̍̋͛̂̏̕͠P̴͓̝͇̙̥̜̙̜̦̊́͂̐͌̽̀̀̂Ŗ̴̧͕̲̥͈̲͗̿͝O̷̡̧͇̭̭͕̍͑̑̂̆̄͘̕͜͠Ỉ̸̭͕̠͇̖B̸̫̭̻̏̈́͌͝Ĭ̴̻̣̠͉̓͊̕͝Ṯ̶̛̊̓̄̐̈́͋̏̕A̵̡̗͚̖͔̥͍͌̉́̒͠ |
+
 Astrazione a *blackbox* del latch:
+
 ```
      ________________
 s -> | s       y    | -> y
@@ -21,6 +23,14 @@ r -> | r   not y (z)| -> z
 
 $y_{\text{ nuova}}=\overline{r+z}=\overline{r+\overline{s+y_{\text{ vecchia}}}}=\overline{r}\bullet(s+y_{\text{ vecchia}})$
 Il tempo $\Delta t$ tra la $y$ nuova e quella vecchia non è indifferente: dipende dal tempo di attraversamento del segnale fra porte NOR.
+
+# tabella inversa
+| $y, Y$ | $s, r$                                                                |
+| ------ | --------------------------------------------------------------------- |
+| 00     | 0 $\delta$ (se si passa da 0 a 0 o si memorizza 0 o si resetta)       |
+| 01     | 10 (funzione di set)                                                  |
+| 10     | 01 (funzione di reset)                                                |
+| 11     | $\delta$ 0 (se si passa da 1 a 1 o si memorizza 1 o non si fa niente) |
 
 ## analisi del latch #AI
 Un **latch** è un **elemento di memoria**: può **memorizzare un valore** finché non viene modificato dagli ingressi di **Set (S) e Reset (R)**. L’analisi serve a **capire come si evolve l’uscita nel tempo** rispetto agli ingressi.

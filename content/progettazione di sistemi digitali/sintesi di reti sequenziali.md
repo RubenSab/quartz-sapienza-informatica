@@ -5,13 +5,14 @@
 5. espressioni booleane delle funzioni di eccitazione e uscite
 6. disegno della rete
 
-> N.B.: Occorre un passo di [[minimizzazione dell'automa a stati finiti]].
+> N.B.: Occorre un passo di [[criterio di minimalità|minimizzazione dell'automa a stati finiti]].
 
 > N.B.: Le espressioni booleane minimali servono per la realizzazione con porte logiche o [[programmable logic array (PLA)]], invece se si usa la [[read only memory (ROM)]] o i [[multiplexer (MUX)]] non serve eplicitare le espressioni booleane.
 
 ## esempio
 
 ### 1. descrizione verbale 
+
 > Circuito che riceve in ingresso $x$ e produce in uscita 1 se riconosce 1101 con sovrapposizioni.
 
 ### 2. stati dell'automa
@@ -26,7 +27,7 @@ $S_{11}$: riconosciuto due bit
 | $S_{1}$   | $S_{in}/0$  | $S_{11}/0$ |
 | $S_{11}$  | $S_{110}/0$ | $S_{11}/0$ |
 | $S_{110}$ | $S_{in}/0$  | $S_{1}/1$  |
-Quest'automa è minimo, cioè è costruito con meno stati possibili? Si, perché non ci sono [[stati equivalenti]].
+Quest'automa è minimo, cioè è costruito con meno stati possibili? Si, perché non ci sono [[criterio di minimalità|stati equivalenti]].
 ### 3. codifica degli stati
 - Input: gli input sono già codificati.
 - Stati: In tutto ci sono 4 stati, quindi ci servono 2 bit.

@@ -1,6 +1,8 @@
-#todo aggiungi definizione e funzionamento
+*J e K sono etichette arbitrarie per i due input del flip-flop*
 
-![[flip flop JK.svg]]
+> Un flip-flop JK differisce da un [[flip-flop set-reset (SR)]] solamente dal fatto che quando i due input sono a 1, l'output del flip-flop è il complemento dello stato memorizzato l'istante precedente.
+
+# funzionamento
 
 | J   | K   | y(t+1)            |
 | --- | --- | ----------------- |
@@ -8,5 +10,27 @@
 | 0   | 1   | 0                 |
 | 1   | 0   | 1                 |
 | 1   | 1   | $\overline{y(t)}$ |
-#todo what the hell is this thing (**crying emoji**) :skull:
-$y(t+1)=(s+y)\overline{r}=(j\overline{y}+y)(\overline{ky})=(j\overline{y}+y)(\overline{k}+y)=j\overline{y}\overline{k}+j\overline{y}\overline{y}+y\overline{l}+y\overline{y}=j\overline{y}+y\overline{k}$
+
+## tabella di verità
+
+| y(t) | J   | K   | y(t+1) |
+| ---- | --- | --- | ------ |
+| 0    | 0   | 0   | 0      |
+| 0    | 0   | 1   | 0      |
+| 0    | 1   | 0   | 1      |
+| 0    | 1   | 1   | 1      |
+| 1    | 0   | 0   | 1      |
+| 1    | 0   | 1   | 0      |
+| 1    | 1   | 0   | 1      |
+| 1    | 1   | 1   | 0      |
+
+## espressione booleana
+
+espressione booleana di $y(t+1)$ in funzione di $y(t), J, K$:
+
+$$y(t+1)=\overline{y(t)}\cdot J + y(t)\cdot\overline{K}$$
+# realizzazione
+
+Nel disegno sotto $y(t)=Q$ e $y(t+1)=y$, quindi vale che $y=\overline{Q}\cdot J + Q\cdot\overline{K}$
+
+![[flip flop JK.svg]]
