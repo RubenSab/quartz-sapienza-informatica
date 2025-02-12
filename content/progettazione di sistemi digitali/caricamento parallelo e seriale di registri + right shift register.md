@@ -1,4 +1,4 @@
-# Caricamento parallelo (PI)
+# Caricamento parallelo (PIPO)
 ## Con i [[flip-flop delay (D)]]
 
 Una semplice array di FF da sola **non può** sia **caricarsi parallelamente** che **memorizzare** l'informazione immagazzinata per un periodo maggiore della frequenza di clock, perché il clock manda costantemente impulsi a tutti i flip-flop, facendoli cambiare stato.
@@ -26,7 +26,9 @@ Considerando la linea di LOAD, il circuito invece cambia perché:
 - **R** deve essere uguale a 0 se LOAD = 1 e l'entrata corrispondente = 0
 
 ![[caricamento con FFSR.svg]]
-# Caricamento seriale (SI) nel [[scorrimento sia a destra che a sinistra di registri (SISO)|Right Shift Register]]
+
+---
+# Caricamento seriale (SISO) nel [[scorrimento sia a destra che a sinistra di registri (SISO)|Right Shift Register]]
 ![[caricamento seriale.svg]]
 Questa configurazione di flip-flop può caricarsi serialmente ma è ancora incapace di memorizzare l'informazione per un periodo maggiore della frequenza di clock, perché a ogni impulso del clock i flip-flop cambiano stato.
 

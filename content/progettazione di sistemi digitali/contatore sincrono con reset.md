@@ -1,4 +1,4 @@
-> Può essere resettato quando serve, specialmente per contare in modulo $k\neq 2^{n}$ e non necessariamente $2^{n}$ come il [[contatore asincrono modulo 2 alla n]]
+> Può essere resettato quando serve, specialmente per contare in modulo $k\neq 2^{n}$ e non necessariamente $2^{n}$ come il [[contatore sincrono modulo 2 alla n]]
 # esempio di contatore con reset a mod 13
 > N.B.: è un contatore *ad hoc* che conta specificatamente da 0 a 12.
 
