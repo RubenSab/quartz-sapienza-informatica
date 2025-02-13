@@ -1,35 +1,53 @@
-#todo
-# 1. descrizione verbale
-> Circuito che somma due numeri sommando due bit alla volta ($a_{i}$,$b_{i}$) e produce gli output $c_{i}$, $s_{i}$
+> Adder sequenziale che somma due numeri arbitrariamente lunghi sommando la cifra n-esima del primo con quella del secondo, producendo in output il singolo bit della somma delle due cifre a ogni iterazione.
 
-# 2. stati dell'automa
-- $S_{0}$ = riporto 0
-- $S_{1}$ = riporto 1
+# Sintesi dell'automa
+## 1. [[automi a stati finiti (finite state automata)|Diagramma di Mealy]], stati dell'automa e della macchina
+
+L'idea è di memorizzare il riporto generato in ogni iterazione in un singolo in un singolo [[flip-flop]], dato che è rappresentato da un singolo bit.
+
+![[automa sommatore.png]]
+
+Input: $a,\ b$
+Output: $s$
+Stati: 
+- $q_{0}$ = riporto 0
+- $q_{1}$ = riporto 1
 
 |         | 00        | 01        | 10        | 11        |
 | ------- | --------- | --------- | --------- | --------- |
-| $C_{0}$ | $C_{0}/0$ | $C_{0}/1$ | $C_{0}/1$ | $C_{1}/0$ |
-| $C_{1}$ | $C_{1}/1$ | $C_{1}/0$ | $C_{1}/0$ | $C_{1}/1$ |
+| $q_{0}$ | $q_{0}/0$ | $q_{0}/1$ | $q_{0}/1$ | $q_{1}/0$ |
+| $q_{1}$ | $q_{1}/1$ | $q_{1}/0$ | $q_{1}/0$ | $q_{1}/1$ |
 
-![[automa sommatore.png]]
-# 3. codifica degli stati
+## 2. tabella degli stati futuri realizzata con [[flip-flop delay (D)]]
 
-|         | $y$ (riporto) |
-| ------- | ------------- |
-| $C_{0}$ | 0             |
-| $C_{1}$ | 1             |
-> N.B.: Il riporto è codificato negli stati, la somma $s_{i}$ è l'output
+| $a,\ b,\ q$ | $s$ | $q'$ (stato futuro) | $d$ |
+| ----------- | --- | ------------------- | --- |
+| 000         | 0   | 0                   | 0   |
+| 001         | 1   | 0                   | 0   |
+| 010         | 1   | 0                   | 0   |
+| 011         | 0   | 1                   | 1   |
+| 100         | 1   | 0                   | 1   |
+| 101         | 0   | 1                   | 1   |
+| 110         | 0   | 1                   | 1   |
+| 111         | 1   | 1                   | 1   |
+## 3. espressioni booleane dell'uscita e della funzione di eccitazione
 
-# 4. tabella degli stati futuri realizzata con [[flip-flop (JK)]]
+Della somma:
 
-| $a_{i}b_{i}y_{i}$ | $Y$ (stato futuro) | $s_{i}$ | $jk$       |
-| ----------------- | ------------------ | ------- | ---------- |
-| 000               | 0                  | 0       | 0 $\delta$ |
-| 001               | 0                  | 1       | $\delta$ 1 |
-| 010               | 0                  | 1       | 0 $\delta$ |
-| 011               | 1                  | 0       | $\delta$ 0 |
-| 100               | 1                  | 1       | 0 $\delta$ |
-| 101               | 1                  | 0       | $\delta$ 0 |
-| 110               | 1                  | 0       | 1 $\delta$ |
-| 111               | 1                  | 1       | $\delta$ 0 |
-- kmappa
+| $a\ /\ b,q$ | 00  | 01  | 11  | 10  |
+| ----------- | --- | --- | --- | --- |
+| 0           | 0   | 1   | 0   | 1   |
+| 1           | 1   | 0   | 1   | 0   |
+$s=\overline{a}\cdot(b\oplus q)+a\cdot\overline{b\oplus q}=a\oplus b\oplus q$
+
+Del flip-flop D:
+
+| $a\ /\ b,q$ | 00  | 01  | 11  | 10  |
+| ----------- | --- | --- | --- | --- |
+| 0           | 0   | 0   | 1   | 0   |
+| 1           | 0   | 1   | 1   | 1   |
+$d=bq+aq+ab$
+
+## 4. realizzazione
+
+![[adder sequenziale.jpg]]
